@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+  scroll-behavior: smooth;
+}
+
+/*******************/
+/**    login      **/
+/*******************/
+
+.login {
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(248, 248, 248);
+}
+
+.login-nav {
+  padding: 1rem 5%;
+  display: flex;
+  border-bottom: .1rem solid rgb(236, 236, 236);
+  background-color: rgb(245, 245, 245);
+  align-items: center;
+  justify-content: space-between;
+}
+  .login-nav-item {
+    justify-self: start;
+    font-size: 2rem;
+  }
+    .login-nav-item a {
+      margin-right: 2rem;
+      padding-bottom: .4rem;
+      transition: all 0.3s;
+    }
+      .login-nav-item a:link, .login-nav-item a:visited {
+        text-decoration: none;
+        color: rgb(41, 41, 41);
+        transition: all 0.3s;
+        border-bottom: 0.1rem solid transparent;
+        padding-bottom: 0.5rem;
+      }
+      .login-nav-item a:hover, .login-nav-item a:active {
+        border-bottom: 0.1rem solid rgb(161, 161, 161);
+        color: rgb(161, 161, 161);
+        cursor: pointer;
+      }
+
+  .login-nav-google {
+    width: 20rem;
+    height: 4rem;
+    padding-right: 0.4rem; 
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+    background-color: rgb(255, 17, 0); 
+  }
+    .login-nav-google ion-icon {
+      margin-right: 1rem;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+      .login-nav-google:hover { transform: scale(1.05); }
+      .login-nav-google:active { transform: translateY(0.2rem); }
+
+  .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .login-form-item {
+      width: 40vw;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: space-between;
+    }
+      .login-form-item input {
+        font-size: 1.6rem;
+        border-radius: 2rem;
+        padding-left: 1rem;
+        height: 2.5rem;
+        width: 30vw;
+        transition: all .3s;
+      }
+        .login-form-item input:focus {
+          transform: translateY(-2px);
+          box-shadow: 0.5rem 0.5rem 2.5rem #fff;
+          font-size: 1.7rem;
+          outline: none; 
+        }
+        .login-form-item input::placeholder { color: rgb(255, 0, 0); }
+        .red-background { background-color: rgb(255, 191, 191); }
+
+        .login-form-item-gender {
+          width: 30vw;
+          display: grid;
+          grid-template-columns: 1fr 8fr;
+          align-items: center;
+        }
+          .login-form-item-gender input {
+            height: 2rem;
+            width: 5rem;
+            padding: 0;
+          }
+            .login-form-item-gender input:focus { transform: none; }
+
+      .login-form-btn {
+        width: 7rem;
+        height: 3rem; 
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 1.5rem;
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all .2s;
+        outline: none;
+        background-color: rgb(124, 18, 11); 
+      }
+        .login-form-btn:hover { 
+          transform: scale(1.02); 
+          background-color: rgb(168, 89, 85);
+        }
+        .login-form-btn:active { transform: translateY(0.2rem); }
+        
+          .login-form-btn-logout {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            font-size: 2.5rem;
+            color: rgb(151, 175, 255);
+            transition: all .2s;
+            border-bottom: .1rem solid transparent;
+          } 
+            .login-form-btn-logout:hover,
+            .login-form-btn-logout:focus {
+            text-decoration: none;
+            color: rgb(115, 147, 255);
+            border-bottom: .1rem solid rgb(63, 92, 185);
+            }
+
+.login__account__message { 
+  font-size: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+  .login__account__message a { margin-top: 3rem; }
+  .login__account__message p { margin-bottom: 3rem; }
+  
+/**********************/
+/***  Login search  ***/
+/**********************/
+
+.login-container {
+  background-color: rgb(250, 250, 250);
+  box-shadow: .3rem .3rem .5rem rgba(0, 0, 0, 0.295);
+  height: 9vh;
+  width: 70vw;
+  min-width: 27rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .login-container-searchBar {
+    width: 95%;
+    height: 2.6rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+    .input-text {
+      justify-self: end;
+      margin-right: 3rem;
+      font-size: 1.4rem;
+      border-radius: 2rem;
+      padding-left: 1rem;
+      width: 70%;
+      min-width: 15rem;
+      transition: all .3s;
+    }
+      .input-text:focus {
+        font-size: 1.45rem;
+        outline: none; 
+      }
+      .input-text::placeholder { color: rgb(192, 175, 168); }
+          
+    .input-btn {
+      background-color: rgb(245, 233, 70);
+      width: 30%;
+      min-width: 6rem;
+      height: 2.6rem;
+      padding-right: 0.4rem;
+      font-size: 1.3rem;
+      border-radius: 3rem;
+      border: none;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      transition: all .2s;
+      outline: none;
+    }
+
+  .video-container, .video-container__list {
+    display: grid;
+    height: auto;
+    grid-template-rows: repeat(5, 10rem);
+    grid-row-gap: 1rem;
+    margin-top: 1.5rem;
+  }
+    .video-container-item {
+      padding-left: 3rem;
+      display: grid; 
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.5rem;
+      background-color: rgb(245, 245, 245);
+      transition: all .3s;
+    }
+      .video-container-item:hover {
+        background-color: rgb(216, 216, 216);
+        padding-left: 2rem;
+        border-top: solid .1rem rgb(158, 158, 158);
+        border-bottom: solid .1rem rgb(158, 158, 158);
+      }
+      
+      .video-container-item img {
+        overflow: hidden;
+        height: 10rem;
+        width: 20rem;
+        margin-right: .5rem;
+      }
+      
+
+      
+.video-container__selected-showed {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+.video-container__selected-hidden { 
+  margin: 1rem; 
+  position: relative;
+}
+
+  .video-container__display-hidden, .video-container__display-showed { text-align: center; }
+    .video-container__display-hidden iframe {
+      width: 93.5rem; 
+      height: 52.9rem;
+    }
+    .video-container__display-showed iframe {
+      width: 56rem; 
+      height: 31.5rem;
+    }
+
+  .video-container__icon {
+    color: rgb(255, 137, 108);
+    position: absolute;
+    right: 2rem;
+    top: -3.5rem;
+    font-size: 3rem;
+    height: 4rem;
+  }
+    .video-container__icon ion-icon { cursor: pointer; }
+
+  .video-container__list { margin-top: 0; }
+    .video-container__list-item {
+      display: grid; 
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      background-color: rgb(245, 245, 245);
+    }
+      .video-container__list-item:hover {
+        background-color: rgb(216, 216, 216);
+        padding: .05rem 0;
+        border-top: solid .1rem rgb(158, 158, 158);
+        border-bottom: solid .1rem rgb(158, 158, 158);
+      }
+
+      .video-container__list-item img {
+        overflow: hidden;
+        height: 9rem;
+        width: 18rem;
+        margin-right: .5rem;
+      }
+    
+@media only screen and (max-width: 1270px) {
+  .login-form-item { width: 45vw; }
+}
+@media only screen and (max-width: 800px) {
+  .video-container__selected-showed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .video-container__icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-form-item { width: 53vw; }
+}
+@media only screen and (max-width: 420px) {
+  .login-form-item { width: 60vw; }
+}

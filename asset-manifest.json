@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/LoginApp/static/js/main.5f9dba05.chunk.js",
+    "main.js.map": "/LoginApp/static/js/main.5f9dba05.chunk.js.map",
+    "runtime~main.js": "/LoginApp/static/js/runtime~main.85bf3aea.js",
+    "runtime~main.js.map": "/LoginApp/static/js/runtime~main.85bf3aea.js.map",
+    "static/js/2.90491335.chunk.js": "/LoginApp/static/js/2.90491335.chunk.js",
+    "static/js/2.90491335.chunk.js.map": "/LoginApp/static/js/2.90491335.chunk.js.map",
+    "index.html": "/LoginApp/index.html",
+    "precache-manifest.fd2a12c6752e4fa6ba6e7911a12ff9a0.js": "/LoginApp/precache-manifest.fd2a12c6752e4fa6ba6e7911a12ff9a0.js",
+    "service-worker.js": "/LoginApp/service-worker.js"
+  }
+}
